@@ -1,0 +1,9 @@
+mport random
+import math
+
+r = random.randint(1, 10)
+h = random.randint(1, 10)
+V = 1 / 3 * math.pi * r * r * h
+print("圆锥体的半径为:", r)
+print("圆锥体的高为:", h)
+print("圆锥体的体积为:", V)
