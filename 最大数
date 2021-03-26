@@ -1,0 +1,8 @@
+a=int(input("请输入第一个数"))
+b=int(input("请输入第二个数"))
+c=int(input("请输入第三个数"))
+if b>=a:
+    a=b
+if c>=a:
+    a=c
+print("三个数中最大的数字为",a)
