@@ -1,0 +1,8 @@
+st = input("请输入一个字符:")
+a = int(st.isupper())
+if a == 0:
+    print("输出的字符为:", st.upper())
+elif a != 0:
+    print("输出的字符为:", st.lower())
+else:
+    print(st)
