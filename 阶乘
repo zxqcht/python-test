@@ -1,0 +1,5 @@
+n = int(input("请输入一个小于10的整数:"))
+x = 1
+for i in range(1, n + 1):
+    x = x * i
+print("1到%d的乘积为:%d" %(n,x))
