@@ -1,0 +1,14 @@
+a = int(input("请输入一个数字:"))
+i = 1
+s = 0
+for i in range(1,a):
+    if a % i == 0:
+        x = i
+        s=x+s
+    i = i + 1
+if s == a:
+    print("%d是完全数" % a)
+elif s > a:
+    print("%d是丰沛数" % a)
+else:
+    print("%d是不足数" % a)
