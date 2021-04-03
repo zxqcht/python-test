@@ -1,0 +1,11 @@
+a = int(input("请输入第一个整数:"))
+b = int(input("请输入第二个整数:"))
+if (a > b):
+    c = a
+    a = b
+    b = c
+for i in range(a, 0, -1):
+    if (a % i == 0 and b % i == 0):
+        print("最大公约数为:", i)
+        break
+print("最小公倍数为:", a / i * b)
