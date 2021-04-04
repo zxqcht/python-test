@@ -1,0 +1,10 @@
+a = int(input("请输入需要判断的整数:"))
+b = 0
+for i in range(1, a-1):
+    i = i + 1
+    if a % i == 0:
+        b = b + 1
+if b == 0:
+    print("%d是素数" % a)
+else:
+    print("%d不是素数" % a)
