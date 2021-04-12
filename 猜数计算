@@ -1,0 +1,16 @@
+import random
+
+count = 1
+z = 0
+while count <= 5:
+    a = random.randint(0, 100)
+    b = random.randint(0, 100)
+    print(a, b)
+    c = int(input("请输入计算结果"))
+    if c == a + b:
+        z = z + 1
+    count = count + 1
+if z >= 4:
+    print("Pass!")
+else:
+    print("No pass!")
