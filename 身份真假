@@ -1,0 +1,24 @@
+factor = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]
+last = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2']
+while True:
+    id = input("Please input your ID number and enter 0 to exit:")
+    if id == '0':
+        break
+    if len(id) != 18:
+        print("Wrong digit,please re-enter")
+        continue
+    else:
+        sum = 0
+        for i in range(17):
+            sum += int(id[i]) * factor[i]
+        m = sum % 11
+        lastchar = id[-1]
+        lastchar = lastchar.upper()
+        if lastchar == last[m]:
+            print(id, "is the legal ID number,", end="")
+            if int(id[-2]) % 2 == 0:
+                print("she is a woman.")
+            else:
+                print("he is a man.")
+        else:
+            print(id, "is the illegal ID number")
