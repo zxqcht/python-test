@@ -1,0 +1,5 @@
+for i in range(0, 2):
+    list.append(input())
+    list[i] = list[i].upper()
+for i in range(0, 2):
+    print(list[i], '\n')
