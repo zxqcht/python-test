@@ -1,0 +1,3 @@
+z = input("请输入数字:")
+list = [x for x in z.split(",")if int(x)%2!=0]
+print(",".join(list))
