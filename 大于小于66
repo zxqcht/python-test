@@ -1,0 +1,14 @@
+set = {11, 22, 33, 44, 55, 66, 77, 88, 99, 90}
+list1 = []
+list2 = []
+dic1 = {}
+dic2 = {}
+for i in set:
+    if i > 66:
+        list1.append(i)
+    elif i < 66:
+        list2.append(i)
+dic1.setdefault('key1', list1)
+dic2.setdefault('key2', list2)
+print(dic1)
+print(dic2)
