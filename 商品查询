@@ -1,0 +1,21 @@
+list = ["mobile phone", "computer", "mouse pad", "yacht"]
+print("1.添加商品\n2.查询商品\n0.退出\n")
+a = int(input("请输入功能号:"))
+if a != 0 and a != 1 and a != 2:
+    print("请输入中正确的商品号!")
+if a == 1:
+    str = input("请输入您想要添加的商品:")
+    if str == "mobile phone" or str == "computer" or str == "mouse pad" or str == "yacht":
+        print("商品已存在!")
+    else:
+        list.append(str)
+        print(list)
+if a == 2:
+    b = int(input("请输入商品序号:"))
+    if b > len(list) - 1:
+        print("请输入正确的商品序号")
+    for i in range(0, len(list)):
+        if b == i + 1:
+            print(list[i])
+if a == 0:
+    print("退出")
