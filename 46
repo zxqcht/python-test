@@ -1,0 +1,7 @@
+i= 0
+while 1:
+    i = i + 1
+    v = i * i * i
+    if v > 100:
+        break
+    print("棱长为%d的体积为:%d" % (i, v))
