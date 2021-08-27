@@ -1,0 +1,18 @@
+def fun(n):
+    list = []
+    c = 0
+    m = n
+    while m > 0:
+        m = m // 10
+        c = c + 1
+    while c > 0:
+        x = n // (10 ** (c - 1))
+        if x % 2 == 0:
+            list.append(x)
+        n = n % (10 ** (c - 1))
+        c = c - 1
+    q=''.join(str(i) for i in list)
+    print(int(q))
+
+n = int(input("请输入一个整数:"))
+fun(n)
